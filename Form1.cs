@@ -422,7 +422,7 @@ namespace ProjeHesapMak
                 Double kenar3 = Convert.ToDouble(textUcgenK3.Text);
                 Double kenarYukeseklik = Convert.ToDouble(textUcgenYuk.Text);
                 Double kenarTaban = Convert.ToDouble(textBoxTK.Text);
-                ucgenAlan.Text = Convert.ToString(kenarTaban * kenarYukeseklik);
+                ucgenAlan.Text = Convert.ToString(kenarTaban * kenarYukeseklik/2);
                 ucgenCevre.Text = Convert.ToString(kenar1+kenar2+kenar3);
             }
 
@@ -458,7 +458,7 @@ namespace ProjeHesapMak
 
         private void chckEskenar_CheckedChanged(object sender, EventArgs e)
         {
-            labelkenar1.Visible= true;
+            labelkenar1.Visible = true;
             textUcgenK1.Visible= true;
             labelkenar2.Visible = false;
             labelkenar3.Visible = false;
@@ -548,6 +548,31 @@ namespace ProjeHesapMak
             lblDaireDer.Visible = true;
             txtDaireDer.Visible = true;
             txtDaireYar.Visible = true;
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textUcgenK1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxTrigonometri_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 
